@@ -20,6 +20,8 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* Nav-Bar */
+
 #logo1 {
     width: 100px;
     height: auto;
@@ -35,6 +37,8 @@ body {
     color: rgb(6, 6, 126);
     font-weight: 500;
 }
+
+/* Landing Page */
 
 .landing-page {
     text-align: center;
@@ -55,9 +59,7 @@ body {
     opacity: .8;
 }
 
-/* #info-carousel {
-    margin-top: 20px;
-} */
+/* Carousel Section */
 
 .carousel-inner {
     min-height: 400px;
@@ -90,6 +92,8 @@ body {
     opacity: .8;
 }
 
+/* Introduction Section */
+
 #introduction{
     border-top: 4px solid rgb(169, 169, 169);
     background-color: rgb(211, 211, 211);
@@ -115,6 +119,8 @@ body {
     margin-bottom: 0;
     padding-bottom: 16px;
 }
+
+/* Recent Projects Section */
 
 #recent-projects {
     background: transparent;
@@ -148,6 +154,8 @@ body {
     margin-left: -1em; 
 }
 
+/* Contact Us Section */
+
 #contact-us {
     border-top: 4px solid rgb(169, 169, 169);
     background-color: rgb(211, 211, 211);
@@ -172,6 +180,8 @@ body {
     padding: 0 5% 0 5%;
     color: rgb(6, 6, 126);
 }
+
+/* Footer Section */
 
 #footer {
     border-top: 4px solid rgb(169, 169, 169);
@@ -246,17 +256,44 @@ body {
 
 /* Media Queries */
 
+@media only screen and (min-width: 1120px) {
+    .landing-page {
+        min-height: 770px;
+    }
 
-@media only screen and (min-width: 922px)
+    .carousel-inner {
+        max-height: 440px ;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .landing-page {
+        min-height: 685px;
+    }
+
+    .carousel-inner {
+        min-height: 430px;
+        max-height: 440px ;
+        overflow: hidden;
+    }
+
+}
+
+
+@media only screen and (max-width: 890px)
 {
     .carousel-inner {
-        max-height: 360px ;
+        max-height: 440px;
     }
 
     #background .bottom-link {
         padding-bottom: 10px;
     }
     
+    .landing-page {
+        max-height: 480px;
+    }
      
 }
 
@@ -269,6 +306,8 @@ body {
     #introduction {
         padding: 0 200px;
     }
+
+    
 }
 
 @media (max-width: 500px) {
